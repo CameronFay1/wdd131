@@ -1,0 +1,85 @@
+:root {
+    --main_color:darkgreen;
+    --secondary_text_color: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Pangolin", cursive;
+}
+
+header {
+    background-color:var(--main_color);
+    color: var(--secondary_text_color);
+    padding-top: 5px;
+}
+header a {
+  color: white !important;
+}
+header span {
+    display: block;
+    text-align: center;
+}
+header nav {
+    background-color:rgb(51, 50, 50);
+    display:flex;
+    justify-content:space-around;
+    color: var(--secondary_text_color);
+    text-decoration: none;
+}
+main h1 {
+    text-align: center;
+    grid-column: span 2;
+    margin: 5px;
+}
+main h2 {
+    text-align: center;
+}
+main p {
+    padding-left: 5px;
+}
+main {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+.card {
+    border:1px black solid;
+    margin:5px;
+    list-style-position: inside;
+}
+.card ul {
+    padding: 10px;
+}
+.card h2 {
+    background-color: var(--main_color);
+    color: var(--secondary_text_color);
+}
+.card h3{
+    border-bottom: 1px black solid;
+    text-align: center;
+}
+.img200 {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px;
+}
+.about_me {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.location {
+    gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.location img {
+  width: 120px;
+  height: 50px;
+}
+footer {
+    padding:10px;
+    background-color: var(--main_color);
+    color: var(--secondary_text_color);
+    text-align: center;
+}
