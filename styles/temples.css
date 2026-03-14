@@ -1,0 +1,64 @@
+:root {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    --main_color:darkgreen;
+    --secondary_text_color: white;
+    text-align: center;
+  }
+  * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+  color: var(--secondary_text_color);
+  text-decoration: none;
+}
+header {
+    background-color: var(--main_color);
+    color: var(--secondary_text_color);
+}
+header nav {
+  display:none;
+}
+nav a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.images img{
+    max-width: 450px;
+    height: auto;
+    margin: 10px;
+}
+footer {   
+    background-color: var(--main_color);
+    color: var(--secondary_text_color);
+}
+#menu {
+  font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #ece6e6;
+  position: absolute;
+  top:.1rem;
+	right:1rem;
+}
+#menu::before {
+  content: "☰";
+}
+#menu.open {
+  content: "❌";
+}
+.open{
+  display: block;
+}

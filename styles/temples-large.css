@@ -1,0 +1,22 @@
+@media screen and (min-width:1400px){
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #menu {
+        display:none;
+    }
+    header {
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 1rem;
+    }
+    header nav {
+        justify-content:space-evenly;
+        display: flex;
+    }
+    header nav a {
+        margin-left:25px;
+    }
+}
