@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W03 Assignment: Country Page">
+    <meta name="author" content="Cameron Fay">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <picture class="heroimg">
+            <source srcset="images/Utah-large.webp" media="(min-width: 1000px)">
+            <img src="images/Utah-small.webp" alt="landscape of Utah" width="100%" height="auto">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 219,887 sq km</p>
+            <p>Population: 3,417,734</p>
+            <p>Capital: Salt Lake City</p>
+            <p>Languages: English</p>
+            <p>Currency: United States Dollar (USD)</p>
+            <p>Time Zone: UTC-7 (MST), UTC-6 (MDT)</p>
+            <p>Calling Code: +1</p>
+            <p>Internet TLD: .us</p>
+        </section>
+        <section class="weather ">
+            <h2>Weather<br></h2>
+            <P>Temperature: <span id="temperature"></span> °F</P>
+            <P>conditions: <span id="condition"></span></P>
+            <P>wind: <span id="wind"></span> mph</P>
+            <p>Wind Chill: <span id="windchill"></span> °F</p>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> - Cameron D. fay - Utah --- </p>
+        <br><br><br>
+        <p>    Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
