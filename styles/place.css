@@ -36,7 +36,7 @@ section {
 }
 @media screen and (max-width: 1000px) {
     .weather h2::after {
-        content: url("/images/rain_cloud.png");
+        content: url("/images/rain_cloud.svg");
     }
     section {
         text-align: center;
