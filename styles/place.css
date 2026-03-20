@@ -1,6 +1,13 @@
+:root {
+    --mainColor:brown;
+}
 *{
     margin: 0;
     padding: 0;
+}
+main img {
+    width:100%; 
+    height:auto;
 }
 
 .heroimg {
@@ -10,13 +17,13 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: brown;
+    background-color: var(--mainColor);
     color: white;
 }
 footer {
     display: flex;
     justify-content: center;
-    background-color: brown;
+    background-color: var(--mainColor);
     color: white;
     padding: 1REM;
 
@@ -67,7 +74,7 @@ section {
         position: absolute;
         top: 60%;
         left: 85%;
-
+    }
     
     .weather h2::after {
         content: "🌦️";
