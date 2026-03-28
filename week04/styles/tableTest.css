@@ -1,0 +1,23 @@
+caption {
+    caption-side: bottom;
+}
+table {
+    text-align: center;
+    border: 1px rgba(0, 0, 0, 0.226) solid;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 12px;
+    border: 1px rgba(0, 0, 0, 0.226) solid;
+}
+thead tr th:nth-child(n+2) {
+  background: #444;
+  color: white;
+}
+thead tr th:nth-child(1) {
+  background: black;
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
