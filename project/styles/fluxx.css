@@ -1,0 +1,44 @@
+:root {
+    --mainColor:rgb(73, 72, 72);
+    --secondaryCorlor:black;
+    --textColor:white;
+    --border:1px black solid;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color:var(--textColor);
+    font-family: "Playpen Sans Hebrew", cursive;
+}
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--mainColor);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+header h1 {
+    padding-top: 25px;
+}
+p {
+font-family: "Barlow Condensed", sans-serif; 
+font-weight: 500;
+
+}
+main {
+    margin: 10px 120px;
+}
+footer {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: var(--mainColor);
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
