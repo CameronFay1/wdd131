@@ -33,12 +33,14 @@ const products = [
 const select = document.querySelector("#products")
 appendToSelect(products)
 function appendToSelect(products) {
-products.forEach(product => {
+  products.forEach(product => {
     const value = product.id;
     const name = product.name;
     const option = document.createElement('option');
     option.value = value;
     option.textContent = name;
     select.appendChild(option);
-});
+  });
 };
+
+
