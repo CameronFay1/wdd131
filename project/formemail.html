@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the Website Planning Document Project W05 Fluxx Zone">
+    <meta name="author" content="Cameron Fay">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bungee&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pangolin&family=Playpen+Sans+Hebrew:wght@100..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bungee&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pangolin&family=Playpen+Sans+Hebrew:wght@100..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+        <title>Fluxx zone</title>
+    <link rel="stylesheet" href="styles/fluxx.css">
+    <script defer src="scripts/fluxx.js"></script>
+ </head>
+ <body>
+    <header>
+        <img src="images/fluxx.webp" alt="the box for fluxx">
+        <h1>Welcome to the Fluxx Zone<h1>
+            <a href="fluxxzone.html">Home</a>
+            <a href="fluxxversions.html">Fluxx Versions</a> 
+            <a href="formemail.html"> sign up for emails</a>
+    </header>
+    <main>
+ <form action="formcomplete.html" method="git" id="form">
+            <legend>Sign up for Emails</legend>
+            <fieldset>
+                <label>Name:<br><input type="name" name="name" autocomplete="name"></label><br><br>
+                <label>Email*:<br><input type="email" name="email" autocomplete="email" required placeholder="example@gmail.com"></label>
+            </fieldset>
+
+                <button>Sign up</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> - Cameron D. fay - Utah</p>
+        <p id="lastModified"></p>
+        <p><span id="visits"></span></p>
+    </footer>
+ </body>
+ </html>

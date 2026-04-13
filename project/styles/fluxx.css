@@ -5,13 +5,17 @@
     --border:1px black solid;
 }
 * {
+    font-size: large;
     margin: 0;
     padding: 0;
     color:var(--textColor);
     font-family: "Playpen Sans Hebrew", cursive;
+    box-sizing: border-box;
 }
 body {
     background-color: black;
+    
+
 }
 header img {
     height: 100px;
@@ -19,13 +23,57 @@ header img {
 }
 header {
     display: flex;
+    flex-wrap:wrap;
     background-color: var(--mainColor);
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
 }
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin-left: 70%;
+    margin: 70px 0 25px 28px;
+}
+form input {
+    color: var(--secondaryCorlor);
+}
+form fieldset {
+    border-radius: 12px;
+    padding: 10px;
+}
+form input:required {
+    border-left: 10px red solid;
+}
+form input[type="email"]:valid {
+    border-left: 10px green solid;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: auto;
+    margin: 70px 120px 10px;
+}
+form button {
+    color: var(--secondaryCorlor);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+}
+.gamelist {
+    margin: 10px;
+}
 header h1 {
-    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+header a {
+   padding-left: 10px; 
 }
 p {
 font-family: "Barlow Condensed", sans-serif; 
@@ -33,7 +81,7 @@ font-weight: 500;
 
 }
 main {
-    margin: 10px 120px;
+    margin: 10px;
 }
 footer {
     border-radius: 20px;
@@ -44,3 +92,49 @@ footer {
     top: 100px;
     text-align: center;
 }
+main .images {
+    display: flex;
+    flex-wrap: wrap;
+}
+main .images img {
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+figcaption {
+    text-align: center;
+}
+#button {
+    color: var(--secondaryCorlor);
+    padding: 5px;
+}
+#game {
+    color: var(--secondaryCorlor);
+}
+#list button{
+    color: var(--secondaryCorlor);
+    border-radius: 12px;
+    padding: 3px;
+    margin-left: 10px;
+}
+.nav {
+    display: flex;
+    place-items: center;
+padding: 0 100px 0 0;
+}
+@media screen and (min-width: 1126px) {
+	main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        max-width: 80%;
+        margin: 70px 120px 10px;
+	}
+    main div {
+        padding-left: 120px;
+    }
+    form {
+        margin-left:70%; 
+    }
+}
+
